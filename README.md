@@ -6,6 +6,7 @@
 #### - **Office**: EME B43
 #### - **Office Hours**: Wednesdays 1–2 PM, or by appointment
 #### - **Homepage**: [www.eecs.wsu.edu/~assefaw](http://www.eecs.wsu.edu/~assefaw)
+#### -  [**Syllabus Link**](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Course-Information/cpts-sp22-syllabus%20(2).pdf)
 
 ## Course Information
 - **Credit Hours**: 3
