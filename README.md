@@ -257,19 +257,79 @@ This part seeks to engage students in thinking critically about how complexity c
 ## [Homework 9](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Homeworks/Homework9)
 
 ### Overview
+#### Topics Covered
+#### 1. Grammar to PDA Conversion:
+- Students are tasked with constructing a PDA for a given CFG, demonstrating the equivalence between these two language representations.
 
+#### 2. PDA to Grammar Conversion:
+- Translating a given PDA into a CFG, emphasizing the ability to convert between automata and grammar-based representations of languages.
+
+#### 3. Properties of Context-Free Languages:
+- Proving language properties involving operations on context-free languages and exploring the limits of context-free languages.
+
+#### 4. Non-Context-Free Language Proofs:
+- Using the Pumping Lemma to show that certain languages cannot be represented by context-free grammars.
+
+#### Specific Tasks
+
+- ##### Task 1: Construct a PDA that accepts the language defined by the CFG given. This involves designing stack-based transitions that correspond to the grammar's productions.
+
+- ##### Task 2: Translate the given PDA into a CFG that generates the same language. This requires understanding how PDA transitions translate into grammar rules.
+
+- ##### Task 3: Show that the language 𝐿3 = {𝑥𝑥𝑟 : 𝑥 ∈ 𝐿1 and 𝑥𝑟 ∈ 𝐿2} is context-free if 𝐿1 and 𝐿2 are regular languages. This involves constructing a CFG that can generate strings of the form 𝑥𝑥𝑟.
+
+- ##### Task 4: Demonstrate that the language 𝐿 = {𝑎2 𝑚𝑏3𝑚 𝑐4𝑚 : 𝑚 ≥ 0} is not context-free by using the Pumping Lemma for context-free languages.
+  
 ---
 
 ## [Homework 10](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Homeworks/Homework10)
 
 ### Overview
+#### Topics Covered
 
+#### 1. Turing Machine Construction:
+- Students are tasked with building Turing machines for specific languages, emphasizing the design and implementation of state transitions and tape manipulations.
+
+#### 2. Comparative Computational Models:
+- The homework includes discussions on the computational power of Turing machines compared to other automata, such as PDAs, and investigates restricted forms of Turing machines.
+
+#### 3. Two-Stack PDA Simulation:
+- Exploring how Turing machines can be simulated by two-stack PDAs, illustrating the equivalence of these models under certain conditions.
+
+#### Specific Tasks
+- ##### Task 1: Construct a Turing machine that accepts the language (b + c)^+#a^+, ensuring that the design includes comments to explain the logic behind the transitions.
+
+- ##### Task 2: Build a Turing machine to accept strings of the form 𝑥 # 𝑥𝑟 where 𝑥 consists of symbols {𝑎,𝑏}, demonstrating how the TM can check for palindromes with a delimiter.
+
+- ##### Task 3: Describe why Turing machines are more powerful than PDAs and show that one-turn Turing machines accept context-free languages by simulating them with PDAs.
+
+- ##### Task 4: Explain how a Turing machine can be simulated using a two-stack PDA, illustrating how stacks can represent the tape content and head position of a TM.
+  
 ---
 
 ## [Homework 11](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Homeworks/Homework11)
 
 ### Overview
+#### Topics Covered
+#### 1. Recursive Enumerable and Recursive Languages:
+- Exploring the properties of recursive enumerable (r.e.) and recursive languages, particularly focusing on closure properties and the relationships between languages and their complements.
 
+#### 2. Turing Machine Equivalence:
+- Investigating the equivalence between different Turing machines and understanding how infinitely many Turing machines can accept the same language.
+
+#### 3. Decidability of Language Problems:
+- Analyzing specific problems related to Turing machines to determine whether they are decidable, including the balance of instructions and modifications of Turing machines.
+
+#### Specific Tasks
+- ##### Task 1: Show that if both a language 𝐿 and its complement are recursively enumerable, then 𝐿 is recursive. Additionally, prove that recursively enumerable languages are not closed under complementation.
+
+- ##### Task 2: Prove that recursive languages are closed under complement, demonstrating that the complement of a recursive language is also recursive.
+
+- ##### Task 3: Demonstrate that for any Turing machine 𝑀, there are infinitely many 𝑖 such that 𝐿(𝑀) =𝐿(𝑀𝑖). This involves understanding how different Turing machines can accept the same language through variations in their construction.
+
+- ##### Task 4: Show that the problem of determining whether a given Turing machine has the same number of left (L) and right (R) instructions is decidable.
+
+- ##### Task 5: Prove that it is decidable whether there exists a Turing machine 𝑀′ with the same number of L and R instructions as a given Turing machine 𝑀, while still accepting the same language.
 
 
 
