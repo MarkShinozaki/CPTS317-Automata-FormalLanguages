@@ -133,8 +133,6 @@ This document provides an overview of finite automata, their applications, and t
 
 - **Formal Definition**: Mathematical description of finite automata and their language recognition capabilities.
 
-- **Examples**: Several finite automata are provided, illustrating their structure and behavior on input strings.
-
 ### [NFA-DFA-Equivalence.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(3)%20Finite%20Automata/NFA-DFA-Equivalence.pdf)
 
 This document explores the equivalence between nondeterministic finite automata (NFAs) and DFAs and the closure properties of regular languages.
@@ -152,16 +150,12 @@ This document explains nondeterministic finite automata (NFAs) and their computa
 - **Nondeterminism**: Introduction to nondeterministic computation, where multiple choices may exist for the next state.
   
 - **Comparison with DFAs**: NFAs are shown to be equivalent in power to DFAs but often easier to construct for certain languages.
-  
-- **Examples**: Illustrations of NFAs recognizing languages based on patterns and specific conditions.
 
 ### [PowersetConstruction-NFA2DFA.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(3)%20Finite%20Automata/PowersetConstruction-NFA2DFA.pdf)
 
 This document details the powerset construction method for converting NFAs to DFAs.
 
 - **Powerset Construction**: Step-by-step explanation of converting NFAs to equivalent DFAs using the powerset of states.
-
-- **Example**: A visual example demonstrates the conversion process, illustrating state transitions and acceptance conditions.
 
 - **Equivalence**: Emphasizes that NFAs and DFAs recognize the same class of regular languages.
 
@@ -171,8 +165,6 @@ This document describes the conversion of regular expressions to NFAs, demonstra
 
 - **Conversion Process**: Outlines the method for constructing an NFA from a given regular expression.
 
-- **Examples**: Several examples are provided, illustrating how different regular expressions are translated into NFAs.
-
 - **Equivalence Theorem**: States that any language described by a regular expression can be recognized by an NFA.
 
 ### [RegularExpressions.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(3)%20Finite%20Automata/RegularExpressions.pdf)
@@ -181,11 +173,144 @@ This document introduces regular expressions and their use in defining patterns 
 
 - **Regular Expressions**: Explanation of how regular expressions are constructed using union, concatenation, and star operations.
 
-- **Examples**: Illustrative examples showing how regular expressions define languages with specific properties.
-
 - **Applications**: Discusses the role of regular expressions in computer science, including their use in compilers and text processing.
 
 --- 
+
+## [Non Regular Languages ](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Slides-Lectures/(4)%20Nonregular%20Languages)
+
+### [NonRegularLanguages-partI.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(4)%20Nonregular%20Languages/NonRegularLanguages-partI.pdf)
+
+This document introduces the concept of non-regular languages and begins to explore their properties.
+
+- **Nonregular Languages**: Discussion of languages that cannot be recognized by any finite automaton (DFA).
+  
+- **Example Language**: The document explores the language 𝐵 = {0𝑛 1𝑛 ∣ 𝑛 ≥ 0 } and explains why it is non-regular by discussing the limitations of finite automata in keeping track of an unbounded number of 0s and 1s.
+
+- **Pumping Lemma Introduction**: Introduction to the Pumping Lemma, a crucial tool for proving that certain languages are non-regular.
+  
+- **Proof Techniques**: Uses examples and the pigeonhole principle to explain how finite automata's state limitations lead to non-regularity.
+
+### [PL-exercises.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(4)%20Nonregular%20Languages/PL-exercises.pdf)
+
+This document provides exercises focused on applying the Pumping Lemma to prove the non-regularity of specific languages.
+
+- **How to Apply the Pumping Lemma**: Step-by-step guide on using the Pumping Lemma to prove that a language is non-regular.
+
+- **Exercises**: Includes multiple exercises where the Pumping Lemma is applied to demonstrate the non-regularity of various languages, such as:
+  - 𝐸 = { 0𝑖1𝑗 ∣ 𝑖 > 𝑗}
+  - 𝐹 = {0𝑛 1𝑚 0𝑛 ∣ 𝑚, 𝑛 ≥ 0}
+  - 𝐺 = {0𝑚 1𝑛 ∣ 𝑚 ≠ 𝑛}
+
+- **Proof Strategies**: Discusses different strategies for finding contradictions when assuming a language is regular.
+
+### [PumpingLemma.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(4)%20Nonregular%20Languages/PumpingLemma.pdf)
+
+This document provides a detailed exploration of the Pumping Lemma and how it is used to demonstrate that certain languages are not regular.
+
+- **Pumping Lemma Explanation**: Provides a formal definition of the Pumping Lemma for regular languages and explains its conditions.
+
+- **Application of the Lemma**: Details how to apply the Pumping Lemma to prove the non-regularity of languages by assuming regularity and finding contradictions.
+
+- **Examples**:
+  - Proving the non-regularity of 𝐵={0^𝑛 1^𝑛 ∣ 𝑛 ≥ 0}
+  - Proving the non-regularity of 𝐶 = {𝑤 ∣ 𝑤 has an equal number of 0s and 1s }
+  - Analyzing the non-regularity of other languages using specific examples.
+
+--- 
+
+## [Context Free Languages](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Slides-Lectures/(5)%20Context-free%20Languages)
+
+
+### [CFG-PDA-conversion.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/CFG-PDA-conversion.pdf)
+
+This document discusses the equivalence between context-free grammars (CFGs) and pushdown automata (PDAs), specifically focusing on the conversion process from a CFG to a PDA.
+
+- **CFG to PDA Conversion**: Explains the method of converting a CFG into an equivalent PDA that recognizes the same language.
+
+- **Step-by-Step Conversion**: Details the process of designing a PDA that can simulate the derivations of a CFG by using non-deterministic choices to select production rules.
+
+### [ChomskyNormalForm.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/ChomskyNormalForm.pdf)
+
+This document introduces the Chomsky Normal Form (CNF) for context-free grammars.
+
+- **CNF Overview**: Describes the properties of Chomsky Normal Form, a specific format for CFGs where each production rule is restricted to a specific form.
+
+- **Conversion Process**: Details the procedure for converting any CFG into CNF, including the removal of epsilon rules, unit rules, and 
+simplifying productions to fit the CNF format.
+
+### [context-free-grammars.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/context-free-grammars.pdf)
+
+This document introduces context-free grammars and their applications.
+
+**Introduction to CFGs**: Explains the basic structure of CFGs, including variables, terminals, and production rules.
+
+**Applications of CFGs**: Discusses the use of CFGs in areas such as compilers and human language processing.
+
+### [Converting_Context_Free_Grammars_to_CNF.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/Converting_Context_Free_Grammars_to_CNF.pdf)
+
+This document provides a detailed guide on converting context-free grammars (CFGs) to Chomsky Normal Form (CNF).
+
+- **Conversion Process**: Offers a step-by-step explanation of converting CFGs to CNF, highlighting why each transformation is made and how it preserves the language generated by the grammar.
+
+- **Invalid Rules in CNF**: Discusses the types of rules that are not allowed in CNF and how to address them during the conversion.
+
+### [DCFL+Review.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/DCFL%2BReview.pdf)
+
+This document reviews Deterministic Context-Free Languages (DCFLs) and related concepts.
+
+**Introduction to DCFLs**: Defines DCFLs and explores their properties.
+
+**Comparison with Non-Deterministic CFLs**: Discusses the differences between deterministic and non-deterministic context-free languages.
+
+
+### [designingCFGs.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/designingCFGs.pdf)
+
+This document provides strategies for designing context-free grammars (CFGs).
+
+**Techniques for Designing CFGs**: Offers various techniques to construct CFGs, including breaking down complex languages into simpler components and handling recursive structures.
+
+**Ambiguity in CFGs**: Discusses the concept of ambiguity in CFGs and how it can be identified and addressed.
+
+### [PDA-to-CFG-conversion.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/PDA-to-CFG-conversion.pdf)
+
+This document covers the process of converting pushdown automata (PDAs) into context-free grammars (CFGs).
+
+**PDA to CFG Conversion**: Explains how to construct a CFG that generates the same language as a given PDA.
+
+**Conversion Strategy**: Provides a detailed strategy for designing a CFG based on the transitions and stack operations of a PDA.
+
+### [pushDownAutomata-Examples.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/pushDownAutomata-Examples.pdf)
+
+This document provides examples of pushdown automata (PDAs) and their application in recognizing context-free languages.
+
+**Introduction to PDAs**: Recaps the basic structure and function of PDAs, highlighting their ability to recognize context-free languages.
+
+**Examples of PDAs**: Offers detailed examples of PDAs designed to recognize specific languages, including languages like 𝐵 = {0^𝑛 1^𝑛 ∣ 𝑛 ≥ 0} and palindromes.
+
+**PDA Design**: Guides the reader through the process of designing PDAs for various languages, including both the formal definition and shorthand notation for transitions.
+
+### [pushDownAutomata.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/pushDownAutomata.pdf)
+
+This document introduces pushdown automata (PDAs) and their role in recognizing context-free languages.
+
+**Introduction to PDAs**: Describes how PDAs extend finite automata with a stack, allowing them to recognize a broader class of languages.
+
+**Comparison with NFAs**: Discusses the differences between NFAs and PDAs, emphasizing the additional power provided by the stack.
+
+--- 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
