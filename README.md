@@ -367,10 +367,54 @@ This document, the fourth part in the series, focuses on the definition of algor
 
 --- 
 
+## [Decidability](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Slides-Lectures/(8)%20Decidability)
+
+### [decidability.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(8)%20Decidability/decidability.pdf)
+
+This document introduces the concept of decidability in the context of automata theory, computability theory, and complexity theory.
+
+- **Decidability**: Explores the limits of algorithmic solvability, discussing problems that can and cannot be solved algorithmically.
+
+- **Decidable Languages**: Introduces decidable languages concerning finite automata and context-free grammars, including acceptance, emptiness, and equivalence problems.
+
+- **Theorems and Proofs**: Provides theorems related to the decidability of specific problems, such as whether a DFA or NFA accepts a given string, whether a regular expression generates a particular string, and whether the language of a DFA is empty.
 
 
+### [decidabilityII-JH.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(8)%20Decidability/decidabilityII-JH.pdf)
+
+This document continues the discussion on decidability, focusing on context-free grammars (CFGs) and languages.
+
+- **Decidable Problems in CFGs**: Covers the decidability of problems related to CFGs, such as generation, emptiness, and equivalence.
+
+- **Chomsky Normal Form (CNF)**: Discusses the conversion of CFGs into CNF as part of proving that certain problems related to CFGs are decidable.
+
+- **Pushdown Automata (PDA)**: Explains how PDAs are related to CFGs and how decidability results for CFGs apply to PDAs.
+
+- **Undecidable Problems**: Introduces the concept of undecidability in the context of CFGs, leading into discussions about more complex languages.
+
+### [undecidability.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(8)%20Decidability/undecidability.pdf)
+
+This document shifts the focus to undecidability, presenting key theorems and proofs in the theory of computation.
+
+**Undecidability**: Introduces the concept that some problems are algorithmically unsolvable, meaning no Turing Machine can decide them.
+
+**ATM Problem**: Discusses the acceptance problem for TMs (ATM) and proves its undecidability using diagonalization.
+
+**Cantor's Diagonalization**: Explains the diagonalization method used by Georg Cantor to show that certain sets, like the set of real numbers, are uncountable and applies this technique to prove undecidability in computation.
+
+**Universal Turing Machine**: Describes the Universal Turing Machine, which can simulate any other TM, and how this leads to the proof that ATM is undecidable.
+
+### [undecidabilityII.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(8)%20Decidability/undecidabilityII.pdf)
+
+This document continues the exploration of undecidability and its implications in computation theory.
+
+Uncountable Languages: Explains why some languages are not Turing-recognizable due to the uncountability of the set of all languages versus the countability of TMs.
+Proof of ATM's Undecidability: Provides a detailed proof that ATM is undecidable by constructing a TM that leads to a contradiction when attempting to decide ATM.
+Co-Turing-Recognizable Languages: Introduces the concept of co-Turing-recognizable languages and proves that a language is decidable if and only if both it and its complement are Turing-recognizable.
+Examples and Applications: Offers examples of languages that are not Turing-recognizable and discusses the implications of these findings for computation theory.
 
 
+--- 
 
 
 
