@@ -300,11 +300,24 @@ This document introduces pushdown automata (PDAs) and their role in recognizing 
 
 --- 
 
+## [Equivalence of Automata](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Slides-Lectures/(6)%20Equivalence%20of%20Automata)
+
+### [DFA-equivalence.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(6)%20Equivalence%20of%20Automata/DFA-equivalence.pdf)
+
+- **Equivalence of DFAs**: Discusses how to determine whether two DFAs are equivalent, meaning they recognize the same language.
+
+- **Minimization of DFAs**: Explains the process of minimizing a DFA by removing unreachable states and combining equivalent states to produce the smallest possible DFA.
+
+- **Table Filling Algorithm**: Provides a step-by-step guide to the table filling algorithm, which is used to identify equivalent states within a DFA. The document details how to fill the table by comparing states and their transitions, eventually leading to the identification of equivalent states.
+
+- **Special Cases**: Discusses special cases in DFA minimization, such as handling multiple final states and how to treat them during the minimization process.
+
+- **Applications**: The concepts are illustrated through examples and applications, such as comparing two DFAs to determine if they are equivalent by constructing a unified DFA and applying the table filling algorithm.
 
 
 
 
-
+---
 
 
 
