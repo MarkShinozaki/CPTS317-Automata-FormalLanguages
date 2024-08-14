@@ -315,13 +315,57 @@ This document introduces pushdown automata (PDAs) and their role in recognizing 
 - **Applications**: The concepts are illustrated through examples and applications, such as comparing two DFAs to determine if they are equivalent by constructing a unified DFA and applying the table filling algorithm.
 
 
-
-
 ---
 
+## [Turning Machines](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Slides-Lectures/(7)%20Turing%20Machines)
 
+### [TuringMachines.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(7)%20Turing%20Machines/TuringMachines.pdf)
 
+This document provides an introduction to Turing Machines as part of the broader topics in automata theory, computability theory, and complexity theory.
 
+- **Introduction to Turing Machine**s: Discusses the foundational aspects of Turing Machines (TMs), a more powerful computational model compared to finite automata and pushdown automata.
+
+- **Structure of Turing Machines**: Explains the components of a TM, including the infinite tape, tape head, and transition function.
+
+- **Differences from Finite Automata**: Highlights how TMs differ from finite automata, particularly their ability to both read and write on the tape, move in both directions, and operate with an infinite tape.
+
+- **Definition**: Introduces the formal definition of a TM, including the transition function and the concept of configurations.
+
+### [TuringMachinesII.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(7)%20Turing%20Machines/TuringMachinesII.pdf)
+
+This document is the second part in the series on Turing Machines, building on the concepts introduced in the first document.
+
+- **Formal Definition Recap**: Revisits the formal definition of a TM and how it computes.
+
+- **Turing Recognizable and Decidable Languages**: Discusses the distinction between Turing-recognizable (recursively enumerable) languages and Turing-decidable (recursive) languages.
+
+- **State Diagrams**: Includes state diagrams for the TMs discussed, helping to visualize their operation.
+
+### [TuringMachinesIII.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(7)%20Turing%20Machines/TuringMachinesIII.pdf)
+
+This document, part three in the series, explores variants of Turing Machines and their robustness.
+
+- **Variants of Turing Machines**: Discusses different types of TMs, including multitape TMs, nondeterministic TMs, and enumerators, and how they compare to standard TMs.
+
+- **Simulation of Multitape TMs**: Explains how a single-tape TM can simulate a multitape TM by using a special delimiter to separate the contents of different tapes.
+
+- **Nondeterministic TMs**: Describes how nondeterministic TMs work, where the machine can follow multiple computational paths simultaneously, and their equivalence to deterministic TMs.
+
+- **Enumerators**: Introduces enumerators, a variant of TMs that can list all strings in a language, and discusses their equivalence to Turing-recognizable languages.
+
+### [TuringMachinesIV.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(7)%20Turing%20Machines/TuringMachinesIV.pdf)
+
+This document, the fourth part in the series, focuses on the definition of algorithms through the lens of Turing Machines and their equivalence to other computational models.
+
+- **Definition of Algorithm**: Discusses the historical development of the concept of an algorithm, leading to the formal definition through the Church-Turing thesis, which equates the intuitive notion of algorithms with Turing machine algorithms.
+
+- **Hilbert's Problems**: Explores one of Hilbert's famous problems related to algorithms and decidability, demonstrating the limitations of algorithms and their formalization.
+
+- **Equivalence with Other Models**: Describes how various computational models with unrestricted memory access are equivalent in power to TMs, emphasizing the profound implications for the definition of algorithms.
+
+- **High-Level TM Examples**: Provides examples of how TMs can be described at a high level, focusing on conceptual steps rather than detailed state transitions.
+
+--- 
 
 
 
