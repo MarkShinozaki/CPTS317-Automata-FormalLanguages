@@ -243,9 +243,9 @@ simplifying productions to fit the CNF format.
 
 This document introduces context-free grammars and their applications.
 
-**Introduction to CFGs**: Explains the basic structure of CFGs, including variables, terminals, and production rules.
+- **Introduction to CFGs**: Explains the basic structure of CFGs, including variables, terminals, and production rules.
 
-**Applications of CFGs**: Discusses the use of CFGs in areas such as compilers and human language processing.
+- **Applications of CFGs**: Discusses the use of CFGs in areas such as compilers and human language processing.
 
 ### [Converting_Context_Free_Grammars_to_CNF.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/Converting_Context_Free_Grammars_to_CNF.pdf)
 
@@ -259,44 +259,44 @@ This document provides a detailed guide on converting context-free grammars (CFG
 
 This document reviews Deterministic Context-Free Languages (DCFLs) and related concepts.
 
-**Introduction to DCFLs**: Defines DCFLs and explores their properties.
+- **Introduction to DCFLs**: Defines DCFLs and explores their properties.
 
-**Comparison with Non-Deterministic CFLs**: Discusses the differences between deterministic and non-deterministic context-free languages.
+- **Comparison with Non-Deterministic CFLs**: Discusses the differences between deterministic and non-deterministic context-free languages.
 
 
 ### [designingCFGs.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/designingCFGs.pdf)
 
 This document provides strategies for designing context-free grammars (CFGs).
 
-**Techniques for Designing CFGs**: Offers various techniques to construct CFGs, including breaking down complex languages into simpler components and handling recursive structures.
+- **Techniques for Designing CFGs**: Offers various techniques to construct CFGs, including breaking down complex languages into simpler components and handling recursive structures.
 
-**Ambiguity in CFGs**: Discusses the concept of ambiguity in CFGs and how it can be identified and addressed.
+- **Ambiguity in CFGs**: Discusses the concept of ambiguity in CFGs and how it can be identified and addressed.
 
 ### [PDA-to-CFG-conversion.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/PDA-to-CFG-conversion.pdf)
 
 This document covers the process of converting pushdown automata (PDAs) into context-free grammars (CFGs).
 
-**PDA to CFG Conversion**: Explains how to construct a CFG that generates the same language as a given PDA.
+- **PDA to CFG Conversion**: Explains how to construct a CFG that generates the same language as a given PDA.
 
-**Conversion Strategy**: Provides a detailed strategy for designing a CFG based on the transitions and stack operations of a PDA.
+- **Conversion Strategy**: Provides a detailed strategy for designing a CFG based on the transitions and stack operations of a PDA.
 
 ### [pushDownAutomata-Examples.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/pushDownAutomata-Examples.pdf)
 
 This document provides examples of pushdown automata (PDAs) and their application in recognizing context-free languages.
 
-**Introduction to PDAs**: Recaps the basic structure and function of PDAs, highlighting their ability to recognize context-free languages.
+- **Introduction to PDAs**: Recaps the basic structure and function of PDAs, highlighting their ability to recognize context-free languages.
 
-**Examples of PDAs**: Offers detailed examples of PDAs designed to recognize specific languages, including languages like 𝐵 = {0^𝑛 1^𝑛 ∣ 𝑛 ≥ 0} and palindromes.
+- **Examples of PDAs**: Offers detailed examples of PDAs designed to recognize specific languages, including languages like 𝐵 = {0^𝑛 1^𝑛 ∣ 𝑛 ≥ 0} and palindromes.
 
-**PDA Design**: Guides the reader through the process of designing PDAs for various languages, including both the formal definition and shorthand notation for transitions.
+- **PDA Design**: Guides the reader through the process of designing PDAs for various languages, including both the formal definition and shorthand notation for transitions.
 
 ### [pushDownAutomata.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(5)%20Context-free%20Languages/pushDownAutomata.pdf)
 
 This document introduces pushdown automata (PDAs) and their role in recognizing context-free languages.
 
-**Introduction to PDAs**: Describes how PDAs extend finite automata with a stack, allowing them to recognize a broader class of languages.
+- **Introduction to PDAs**: Describes how PDAs extend finite automata with a stack, allowing them to recognize a broader class of languages.
 
-**Comparison with NFAs**: Discusses the differences between NFAs and PDAs, emphasizing the additional power provided by the stack.
+- **Comparison with NFAs**: Discusses the differences between NFAs and PDAs, emphasizing the additional power provided by the stack.
 
 --- 
 
@@ -396,25 +396,119 @@ This document continues the discussion on decidability, focusing on context-free
 
 This document shifts the focus to undecidability, presenting key theorems and proofs in the theory of computation.
 
-**Undecidability**: Introduces the concept that some problems are algorithmically unsolvable, meaning no Turing Machine can decide them.
+- **Undecidability**: Introduces the concept that some problems are algorithmically unsolvable, meaning no Turing Machine can decide them.
 
-**ATM Problem**: Discusses the acceptance problem for TMs (ATM) and proves its undecidability using diagonalization.
+- **ATM Problem**: Discusses the acceptance problem for TMs (ATM) and proves its undecidability using diagonalization.
 
-**Cantor's Diagonalization**: Explains the diagonalization method used by Georg Cantor to show that certain sets, like the set of real numbers, are uncountable and applies this technique to prove undecidability in computation.
+- **Cantor's Diagonalization**: Explains the diagonalization method used by Georg Cantor to show that certain sets, like the set of real numbers, are uncountable and applies this technique to prove undecidability in computation.
 
-**Universal Turing Machine**: Describes the Universal Turing Machine, which can simulate any other TM, and how this leads to the proof that ATM is undecidable.
+- **Universal Turing Machine**: Describes the Universal Turing Machine, which can simulate any other TM, and how this leads to the proof that ATM is undecidable.
 
 ### [undecidabilityII.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(8)%20Decidability/undecidabilityII.pdf)
 
 This document continues the exploration of undecidability and its implications in computation theory.
 
-Uncountable Languages: Explains why some languages are not Turing-recognizable due to the uncountability of the set of all languages versus the countability of TMs.
-Proof of ATM's Undecidability: Provides a detailed proof that ATM is undecidable by constructing a TM that leads to a contradiction when attempting to decide ATM.
-Co-Turing-Recognizable Languages: Introduces the concept of co-Turing-recognizable languages and proves that a language is decidable if and only if both it and its complement are Turing-recognizable.
-Examples and Applications: Offers examples of languages that are not Turing-recognizable and discusses the implications of these findings for computation theory.
+- **Uncountable Languages**: Explains why some languages are not Turing-recognizable due to the uncountability of the set of all languages versus the countability of TMs.
+
+- **Proof of ATM's Undecidability**: Provides a detailed proof that ATM is undecidable by constructing a TM that leads to a contradiction when attempting to decide ATM.
+
+- **Co-Turing-Recognizable Languages**: Introduces the concept of co-Turing-recognizable languages and proves that a language is decidable if and only if both it and its complement are Turing-recognizable.
+
+--- 
+
+## [Reducibility](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Slides-Lectures/(8)%20Decidability)
+
+
+### [reducibility-part1.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(9)%20Reducibility/reducibility-part1.pdf)
+
+This document introduces the concept of reducibility in computability theory, focusing on how it can be used to demonstrate that certain problems are undecidable.
+
+- **Reducibility**: The process of converting one problem (A) into another problem (B) such that solving B would provide a solution to A. This concept is crucial for classifying problems by their decidability and complexity.
+
+- **Undecidable Problems**: The document discusses several undecidable problems, including the Halting Problem (HALTTM), the Emptiness Problem for TMs (ETM), and the Regular Language Problem for TMs (REGULARTM).
+
+- **Proof Techniques**: Explains how to use reducibility to prove that certain problems are undecidable by showing that if a solution to one undecidable problem existed, it could solve another undecidable problem, leading to a contradiction.
+
+### [reducibility-part2.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(9)%20Reducibility/reducibility-part2.pdf)
+
+This document continues the discussion on reducibility, focusing on additional undecidable problems and further refining the concept.
+
+- **Further Examples of Undecidable Problems**: Introduces the EQTM problem (whether two TMs recognize the same language) and demonstrates its undecidability using reducibility.
+
+- **Computation Histories**: Introduces the concept of computation histories, a technique used to track the sequence of configurations in a TM, which can be employed in proofs involving reducibility.
+
+- **Linear Bounded Automata (LBA)**: Begins the discussion on LBAs, a restricted form of TMs with bounded memory, and their relation to undecidability.
+
+### [reducibility-part3.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(9)%20Reducibility/reducibility-part3.pdf)
+
+This document concludes the discussion on reducibility and introduces more advanced topics such as mapping reducibility.
+
+- **Linearly Bounded Automata (LBA)**: Continues the discussion on LBAs, including their properties and how they relate to decidability.
+
+- **Mapping Reducibility**: Formalizes the concept of reducibility by introducing mapping reducibility, a method used to show that certain languages are not Turing-recognizable.
+
+- **Applications of Mapping Reducibility**: Explores how mapping reducibility can be applied to both decidable and undecidable problems, providing a framework for proving non-recognizability.
 
 
 --- 
+
+## [Time Complexity](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Slides-Lectures/(8)%20Decidability)
+
+
+### [timeComplexity.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(10)%20Time%20Complexity/timeComplexity.pdf)
+
+- **Time Complexity Overview**: Provides an introduction to measuring the time complexity of algorithms and classifying problems according to the time required to solve them.
+
+- **Asymptotic Analysis**: Discusses Big-O notation and its use in analyzing the time complexity of algorithms.
+
+- **Classifying Languages by Time Requirements**: Explores how languages can be classified based on the time complexity of the algorithms that decide them, comparing single-tape and multi-tape Turing machines.
+
+- **Complexity Theory vs. Computability Theory**: Highlights the differences between complexity theory, which focuses on resource usage, and computability theory, which focuses on the ability to solve problems.
+
+### [timecomplexity-part2.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/blob/Slides-Lectures/(10)%20Time%20Complexity/timecomplexity-part2.pdf)
+
+- **Complexity Classes**: Introduces and defines important complexity classes such as P (polynomial time) and NP (nondeterministic polynomial time).
+
+- **Single-Tape vs. Multi-Tape Turing Machines**: Discusses the simulation of multi-tape Turing machines by single-tape machines and the impact on time complexity.
+
+- **Deterministic vs. Nondeterministic Turing Machines**: Explores the relationship between deterministic and nondeterministic Turing machines, including the simulation of the latter by the former and the resulting impact on time complexity.
+
+- **Polynomial Time**: Explains why polynomial time is considered a reasonable boundary for tractable problems and the significance of the separation between polynomial and exponential time.
+
+- **The Class P**: Defines the class P, providing examples of problems in P and discussing why they are considered efficiently solvable.
+
+- **The Class NP**: Introduces the class NP and discusses the P vs NP problem, one of the most significant open questions in theoretical computer science
+
+---
+
+## [review.pdf](https://github.com/MarkShinozaki/CPTS317-Automata-FormalLanguages/tree/Slides-Lectures/(11)%20Course%20Wrap-up)
+
+
+- **Why Study Theory of Computation?**: Discusses the relevance and importance of computation theory in practical applications, personal intellectual growth, and the broader field of computer science.
+
+- **Three Central Areas of Computation Theory**: Summarizes the focus areas of automata theory, computability theory, and complexity theory, and how they are interconnected by the fundamental question of what computers can and cannot do.
+
+- **Complexity Theory**: Provides an overview of complexity theory, including the classification of computational problems according to their difficulty, practical utility, and the significance of the P vs. NP problem.
+
+- **Computability Theory**: Discusses the work of Gödel, Turing, and Church in discovering that some problems are unsolvable by computers, leading to the development of theoretical models of computation.
+
+- **Automata Theory**: Covers the definitions and properties of mathematical models of computation, such as finite automata and context-free grammars, and their applications in areas like text processing and programming languages.
+
+- **Topics Covered in the Course**: Outlines the three major parts of the course:
+
+  - **Part One**: Automata and Languages: Regular languages, context-free languages, and related models like finite automata and pushdown automata.
+
+  - **Part Two**: Computability Theory: Turing machines, decidability, and undecidability.
+    
+  - **Part Three**: Complexity Theory: Time complexity, Big-O notation, and the classes P and NP.
+
+
+
+
+
+
+
+
 
 
 
